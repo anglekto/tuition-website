@@ -60,7 +60,7 @@ nav {
   background-color: #fff;
   position: absolute;
   left: 25%;
-  bottom: .5%;
+  bottom: 0;
   width: 50%;
   height: 200px;
   padding: 20px;
@@ -154,21 +154,35 @@ nav {
   margin-bottom: 10px;
 }
 
-.bar {
+.barGraph {
   font-size: 12px;
   border-left: 1px solid rgba(0,0,0,.2);
   border-bottom: 1px solid rgba(0,0,0,.2);
 }
 
-.barInner1 {
+.bar {
+  background-color: #C5E3BF;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.bar:hover {
+  background-color: #C0C0C0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* .barInner1 {
   background-color: #C5E3BF;
   width: 45%;
   padding: 10px;
   margin-bottom: 20px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  -webkit-animation: first 2s linear;
-          animation: first 2s linear;
 }
 
 .barInner2 {
@@ -203,7 +217,7 @@ nav {
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
-}
+} */
 
 #scale {
   position: relative;
@@ -294,21 +308,5 @@ footer {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .bar {
-    border: 0;
-  }
-
-  .barInner1, .barInner2, .barInner3, .barInner4 {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 5px;
-  }
-
-  #scale {
-    display: none;
   }
 }
